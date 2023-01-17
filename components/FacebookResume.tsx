@@ -249,7 +249,7 @@ function FacebookResume({ data }: Props) {
                           {/*  Link to Github For the Project */}
                           {/* href="https://github.com/AJMikalauskas/full-stack-crypto-app/tree/near-final-version" */}
                           <a
-                            href={fillInData?.projects[0].github}
+                            href="https://github.com/AJMikalauskas/full-stack-crypto-app-v2"
                             className=""
                             target="_blank"
                             rel="noreferrer"
