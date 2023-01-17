@@ -115,7 +115,7 @@ function FacebookResume({ data }: Props) {
                 <div className="rounded-lg shadow-lg bg-white max-w-sm">
                   <div className="p-3">
                     <p className="text-gray-900 text-md font-semibold pb-2">
-                      {fillInData?.skills[1].skillSetName.split(" ")[0]} Skills
+                      {fillInData?.skills[0].skillSetName.split(" ")[0]} Skills
                     </p>
                     <div className="border-b-2 px-1">
                       <div
@@ -123,7 +123,7 @@ function FacebookResume({ data }: Props) {
                         style={{ fontSize: "10px" }}
                       >
                         <ul>
-                          {fillInData?.skills[1].skills.map(
+                          {fillInData?.skills[0].skills.map(
                             (skillName, idx) => (
                               <li key={idx} className="mb-1.5">
                                 {skillName}
@@ -160,7 +160,7 @@ function FacebookResume({ data }: Props) {
                 <div className="rounded-lg shadow-lg bg-white max-w-sm mt-4">
                   <div className="p-3">
                     <p className="text-gray-900 text-md font-semibold pb-2">
-                      {fillInData?.skills[0].skillSetName}
+                      {fillInData?.skills[1].skillSetName}
                     </p>
                     <div className="px-1">
                       <div
@@ -168,7 +168,7 @@ function FacebookResume({ data }: Props) {
                         style={{ fontSize: "10px" }}
                       >
                         <ul>
-                          {fillInData?.skills[0].skills.map(
+                          {fillInData?.skills[1].skills.map(
                             (skillName, idx) => (
                               <li key={idx} className="mb-1.5">
                                 {skillName}
@@ -233,7 +233,7 @@ function FacebookResume({ data }: Props) {
                       />
                       {/* https://crypto-app-demo.netlify.app/loggedOutHome */}
                       <a
-                        href={fillInData?.projects[0].link}
+                        href="https://crypto-app-v2.netlify.app/"
                         target="_blank"
                         rel="noreferrer"
                       >

@@ -107,7 +107,7 @@ function MicrosoftResume({ data }: Props) {
                       {/* "https://crypto-app-demo.netlify.app/loggedOutHome" */}
                       (
                       <a
-                        href={fillInData?.projects[0].link}
+                        href="https://crypto-app-v2.netlify.app/"
                         className="text-sky-300 hover:underline"
                         target="_blank"
                         rel="noreferrer"
@@ -116,7 +116,7 @@ function MicrosoftResume({ data }: Props) {
                       </a>
                       ) - (
                       <a
-                        href={fillInData?.projects[0].github}
+                        href="https://github.com/AJMikalauskas/full-stack-crypto-app-v2"
                         className="text-sky-300 hover:underline"
                         target="_blank"
                         rel="noreferrer"
@@ -250,7 +250,7 @@ function MicrosoftResume({ data }: Props) {
                   <div>
                     <div className="mb-2">
                       <span className="font-semibold">
-                        {fillInData?.skills[1].skillSetName}
+                        {fillInData?.skills[0].skillSetName}
                       </span>
                       <span className="float-right">
                         {/* How to create an accordion animation? */}
@@ -279,7 +279,7 @@ function MicrosoftResume({ data }: Props) {
                       }`}
                     >
                       <ul className="text-left dropdown-menu-1 ">
-                        {fillInData?.skills[1].skills.map(
+                        {fillInData?.skills[0].skills.map(
                           (skill: string, idx: number) => (
                             <li
                               key={idx}

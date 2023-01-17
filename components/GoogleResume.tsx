@@ -166,7 +166,7 @@ function GoogleResume({ data }: Props) {
                   {/* Create a */}
                   <div className="">
                     <a
-                      href={fillInData?.projects[0].link}
+                      href="https://crypto-app-v2.netlify.app/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -180,7 +180,7 @@ function GoogleResume({ data }: Props) {
                             paddingTop: "1.5px",
                           }}
                         >
-                          {fillInData?.projects[0].link}
+                         https://crypto-app-v2.netlify.app/
                         </p>
                       </div>
                       <p className="text-sky-700 font-semibold text-sm hover:underline">
@@ -390,7 +390,7 @@ function GoogleResume({ data }: Props) {
                             aria-controls="collapseOne5"
                             style={{ fontSize: "10px", lineHeight: "1rem" }}
                           >
-                            {fillInData.skills[1].skillSetName}
+                            {fillInData.skills[0].skillSetName}
                           </button>
                         </h2>
                         <div
@@ -400,7 +400,7 @@ function GoogleResume({ data }: Props) {
                         >
                           <div className="accordion-body text-xs">
                             <ul>
-                              {fillInData.skills[1].skills.map(
+                              {fillInData.skills[0].skills.map(
                                 (skillName, idx) => (
                                   <li key={idx} className="mb-1.5">
                                     {skillName}
@@ -460,7 +460,7 @@ function GoogleResume({ data }: Props) {
                             aria-controls="collapseThree5"
                             style={{ fontSize: "10px", lineHeight: "1rem" }}
                           >
-                            {fillInData?.skills[0].skillSetName}
+                            {fillInData?.skills[1].skillSetName}
                           </button>
                         </h2>
                         <div
@@ -470,7 +470,7 @@ function GoogleResume({ data }: Props) {
                         >
                           <div className="accordion-body text-xs">
                             <ul>
-                              {fillInData?.skills[0].skills.map(
+                              {fillInData?.skills[1].skills.map(
                                 (skillName, idx) => (
                                   <li key={idx} className="mb-1.5">
                                     {skillName}
